@@ -96,13 +96,7 @@ resource "google_storage_bucket_iam_member" "unity_cred_reader" {
   member = "serviceAccount:${databricks_storage_credential.ext.databricks_gcp_service_account[0].email}"
 }
 
-resource "databricks_grants" "external_creds" {
-  storage_credential = databricks_storage_credential.ext.id
-  grant {
-    principal  = "mick2008nit@gmail.com"
-    privileges = ["CREATE_TABLE"]
-  }
-}
+
 
 resource "databricks_external_location" "some" {
   name = "the-ext-location"
@@ -117,10 +111,4 @@ resource "databricks_external_location" "some" {
   ]
 }
 
-resource "databricks_grants" "some" {
-  external_location = databricks_external_location.some.id
-  grant {
-    principal  = "mick2008nit@gmail.com"
-    privileges = ["CREATE_TABLE", "READ_FILES"]
-  }
-}
+
