@@ -1,0 +1,17 @@
+databricks_account_username="<<acount Username>>"
+databricks_account_password="<<account passowrd>>"
+databricks_account_id="<<databricks account id>>"
+databricks_workspace_url="<<databricks workspace url>>"
+aws_account_id="<<aws account id>>"
+
+tags=["<<tag>>"]
+
+
+databricks_workspace_ids=[<<Comma separated workspace id to attach to metastore>>]
+
+databricks_users=[<<Databricks users>>]
+
+databricks_metastore_admins=[<<Databricks Metastore admins>>]
+
+unity_admin_group=<<Unity Metastore admin group>>
+
