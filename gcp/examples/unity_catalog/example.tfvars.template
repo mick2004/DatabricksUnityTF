@@ -1,0 +1,6 @@
+resource_prefix = <<resource prefix for objects>>
+project = <<Your GCP Project>>
+databricks_workspace_ids =[<<Comma seaparated Workspace Id's where we want to attach metastore>>] 
+databricks_workspace_url = <<Your Databricks URL>>
+location = <<location where metastore need to be created>>
+
